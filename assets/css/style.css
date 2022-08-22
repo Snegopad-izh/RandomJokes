@@ -1,0 +1,198 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+a.text:active, /* активная/посещенная ссылка */
+a.text:hover,  /* при наведении */
+a.text {
+  text-decoration: none;
+  color: white;
+}
+
+
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    height: 100%;
+    min-width: 300px;
+}
+
+body {
+    background-color: rgb(41, 41, 41);
+    height: 100%;
+
+    color: white;
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__wrapper {
+    min-height: 80px;
+    max-width: 1200px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main__wrapper {
+    flex: 1 1 auto;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ease;
+}   
+
+.main__button {
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 500;
+    color: rgb(39, 35, 35);
+    text-decoration: none;
+    padding: .1em .3em 3px;
+    border-radius: 5px;
+    background: #e7a614;
+    box-shadow: 0 -3px rgb(134, 98, 15) inset;
+    cursor: pointer;
+    transition: 0.2s;
+    position: absolute;
+
+    right: -45px;
+    top: 90px;
+
+  }
+  
+  .main__button:hover {
+    background:  rgb(250, 191, 52);
+  }
+  
+  .main__button:active {
+    background: rgb(231, 166, 20);
+    box-shadow: 0 3px rgb(92, 68, 12) inset;
+    color: rgb(46, 48, 28);
+  }
+
+  .main__button-lang {
+    top: 250px;
+    right: -8px;
+}
+
+.shut {
+    height: 300px;
+    width: 200px;
+    background: url(../svg/johnny_automatic_jester.svg) no-repeat center;
+    background-size: 100%;
+
+    margin-bottom: 30px;
+    position:relative;
+}
+
+.joke__place {
+    max-width: 50vw;
+    margin-bottom: 30px;
+}
+
+.footer__wrapper {
+    max-width: 1200px;
+    width: 100%;
+    min-height: 60px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left-box {
+    width: 182px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+
+.left-box__img-copy {
+    display: block;
+    width: 19px;
+}
+
+.left-box__link {
+    text-decoration: none;
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.left-box__link:hover {
+    color: #e7a614;
+}
+
+.RSSchool-link {
+    display: block;
+    margin: 0px 20px;
+    background: url(../svg/rss.svg) no-repeat center;
+    height: 50px;
+    width: 100px;
+    background-size: 100%;
+    transition: 0.4s ease-in-out;
+}
+
+.RSSchool-link:hover {
+    filter: invert(32%) sepia(97%) saturate(973%) hue-rotate(352deg) brightness(94%) contrast(92%);
+}
+
+
+@media screen and (max-width: 362px) {
+    .header__wrapper {
+        justify-content: center;
+    }
+
+    .header__navigation-list {
+        justify-content: center;
+    }
+
+    .header__navigation-item {
+        margin: 3px 10px;
+    }
+
+    .footer__wrapper {
+        justify-content: center;
+    }
+    .left-box {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
